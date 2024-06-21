@@ -1,25 +1,99 @@
+:root {
+  --font-color: #111;
+  --bg-primary: #7843E9;
+  --bg-primary: #7843E9;
+  --bg-gray: #666;
+}
+
 body {
-  color: #333;
-  font-size: 16px;
-  font-family: cursive;
+  font-size: 1.2rem !important;
+  letter-spacing: 1px !important;
 }
 
-main {
-  background: url(../../assets/img/bg.png) repeat;
+.bg-gray {
+  background-color: var(--bg-gray);
 }
 
-h1 {
+.btn {
+  border: none !important;
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  text-transform: uppercase !important;
   font-weight: bold !important;
 }
-.fa {
-  font-size: 12rem;
-  color: #fca700;
-  padding-right: 20px;
+
+.btn-primary,
+.bg-primary {
+  background-color: var(--bg-primary) !important;
 }
 
-.under-construction {
+.navbar-brand,
+.nav-link {
+  color: var(--font-color) !important;
+}
+
+.navbar-nav .nav-link.active,
+.link {
+  color: var(--bg-primary) !important;
+}
+
+.navbar {
+  padding: 1rem 0;
+}
+
+.navbar-nav .nav-link {
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: var(--bg-primary) !important;
+}
+
+.home-bg {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+}
+
+.common-bg {
+  background-image: url('../img/common-bg.svg');
+}
+
+.home-intro-main .heading {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.home-intro-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.projects {
+  background-color: #fbfbfb;
+}
+
+.fc-width {
+  width: fit-content;
+}
+
+.form-div {
+  padding: 2rem;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+footer {
+  background-color: black;
+  color: #fff;
+}
+.copyright {
+  font-size: 0.75rem;
 }
